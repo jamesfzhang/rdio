@@ -69,6 +69,6 @@ License
 
 Author
 -------
-auto-save was created and maintained by [James Zhang](http://jzhang.io).
+Rdio was created and maintained by [James Zhang](http://jzhang.io).
 Give him a shoutout at [@jamesfzhang](https://twitter.com/jamesfzhang)
 if you have comments or questions.
