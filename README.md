@@ -15,7 +15,7 @@ Sublime Text 3 and Rdio for Mac. Please have Rdio open when using the plugin.
 
 Demo
 -------
-![Image](https://github.com/jamesfzhang/rdio/blob/master/demo.gif)
+![Image](https://github.com/jamesfzhang/rdio/blob/master/demo.gif?raw=true)
 
 Installation
 -------
