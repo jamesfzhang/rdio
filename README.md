@@ -20,7 +20,7 @@ Demo
 Installation
 -------
 #### From Package Control
-AutoSave is available through [Sublime Package Control](https://sublime.wbond.net/packages/rdio)
+Rdio is available through [Sublime Package Control](https://sublime.wbond.net/packages/rdio)
 and is the recommended way to install.
 
 #### From Github

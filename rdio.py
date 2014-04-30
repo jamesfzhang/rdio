@@ -2,7 +2,7 @@
 Rdio - Sublime Text Plugin
 
 Provides a convenient way to pause, play, go to next/previous track,
-and get current track information in the Rdio Mac application.
+and get current track information in the Rdio for Mac application.
 '''
 
 
