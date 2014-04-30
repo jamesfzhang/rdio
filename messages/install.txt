@@ -1,0 +1,24 @@
+Thank you for installing Rdio
+----------------------------------------
+
+Enjoy command-line-esque control of Rdio for Mac!
+
+
+Documentation
+=============
+Open the Sublime Text command palette and type "Rdio". The following commands will appear:
+
+1. Rdio: Next - play the next track.
+2. Rdio: Pause - pause the current track.
+3. Rdio: Play - play the current track.
+4. Rdio: Previous - play the current track from beginning or play the previous track.
+5. Rdio: Show Track Info - display the current track's artist, title, and album in the status bar.
+6. Rdio: Toggle - play/pause the current track.
+
+Select a command and press enter.
+
+Useful Links
+============
+* Documentation & Code: https://github.com/jamesfzhang/rdio
+* Report issues: https://github.com/jamesfzhang/rdio/issues
+* Follow me on Twitter: @jamesfzhang
