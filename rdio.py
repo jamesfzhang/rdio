@@ -46,41 +46,50 @@ class RdioPlayCommand(sublime_plugin.WindowCommand):
 
   def run(self):
     Rdio.execute('play')
-    sublime.status_message('Rdio: Play')
+    track = Rdio.execute('track')
+    status = 'Play: {0}'.format(track)
+    sublime.status_message(status)
 
 
 class RdioPauseCommand(sublime_plugin.WindowCommand):
 
   def run(self):
     Rdio.execute('pause')
-    sublime.status_message('Rdio: Pause')
+    track = Rdio.execute('track')
+    status = 'Pause: {0}'.format(track)
+    sublime.status_message(status)
 
 
 class RdioToggleCommand(sublime_plugin.WindowCommand):
 
   def run(self):
     Rdio.execute('toggle')
-    sublime.status_message('Rdio: Toggle (Play/Pause)')
+    track = Rdio.execute('track')
+    status = 'Toggle: {0}'.format(track)
+    sublime.status_message(status)
 
 
 class RdioNextCommand(sublime_plugin.WindowCommand):
 
   def run(self):
     Rdio.execute('next')
-    sublime.status_message('Rdio: Next')
+    track = Rdio.execute('track')
+    status = 'Next: {0}'.format(track)
+    sublime.status_message(status)
 
 
 class RdioPreviousCommand(sublime_plugin.WindowCommand):
 
   def run(self):
     Rdio.execute('previous')
-    sublime.status_message('Rdio: Previous')
+    track = Rdio.execute('track')
+    status = 'Previous: {0}'.format(track)
+    sublime.status_message(status)
 
 
 class RdioTrackCommand(sublime_plugin.WindowCommand):
 
   def run(self):
-    track = 'Rdio: {0} - {1} ({2})'.format(Rdio.execute('artist'), Rdio.execute('track'), Rdio.execute('album'))
-    print(track)
+    track = 'Current Track: {0} - {1} ({2})'.format(Rdio.execute('artist'), Rdio.execute('track'), Rdio.execute('album'))
     sublime.status_message(track)
 
