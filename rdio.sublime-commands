@@ -22,5 +22,25 @@
   {
     "caption": "Rdio: Show Track Info",
     "command": "rdio_track"
+  },
+  {
+    "caption": "Rdio: Add to Collection",
+    "command": "rdio_add"
+  },
+  {
+    "caption": "Rdio: Remove from Collection",
+    "command": "rdio_remove"
+  },
+  {
+    "caption": "Rdio: Sync to Mobile",
+    "command": "rdio_sync"
+  },
+  {
+    "caption": "Rdio: Unsync from Mobile",
+    "command": "rdio_unsync"
+  },
+  {
+    "caption": "Rdio: Copy Track URL",
+    "command": "rdio_url"
   }
 ]

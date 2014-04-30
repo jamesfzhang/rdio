@@ -15,16 +15,21 @@ class Rdio():
   commands = {
     'play': 'play',
     'pause': 'pause',
+    'toggle': 'playpause',
     'next': 'next track',
     'previous': 'previous track',
-    'toggle': 'playpause'
+    'sync': 'sync to mobile',
+    'unsync': 'remove from mobile',
+    'add': 'add to collection',
+    'remove': 'remove from collection'
   }
 
 
   getters = {
     'artist': 'artist',
     'album': 'album',
-    'track': 'name'
+    'track': 'name',
+    'url': 'rdio url'
   }
 
 
@@ -90,6 +95,56 @@ class RdioPreviousCommand(sublime_plugin.WindowCommand):
 class RdioTrackCommand(sublime_plugin.WindowCommand):
 
   def run(self):
-    track = 'Current Track: {0} - {1} ({2})'.format(Rdio.execute('artist'), Rdio.execute('track'), Rdio.execute('album'))
-    sublime.status_message(track)
+    artist = Rdio.execute('artist')
+    track = Rdio.execute('track')
+    album = Rdio.execute('album')
+    status = 'Current Track: {0} - {1} ({2})'.format(artist, track, album)
+    sublime.status_message(status)
 
+
+class RdioSync(sublime_plugin.WindowCommand):
+
+  def run(self):
+    Rdio.execute('sync')
+    track = Rdio.execute('track')
+    status = 'Sync to Mobile: {0}'.format(track)
+    sublime.status_message(status)
+
+
+
+class RdioUnsync(sublime_plugin.WindowCommand):
+
+  def run(self):
+    Rdio.execute('unsync')
+    track = Rdio.execute('track')
+    status = 'Unsync from Mobile: {0}'.format(track)
+    sublime.status_message(status)
+
+
+class RdioAdd(sublime_plugin.WindowCommand):
+
+  def run(self):
+    Rdio.execute('add')
+    track = Rdio.execute('track')
+    status = 'Add to Colletion: {0}'.format(track)
+    sublime.status_message(status)
+
+
+class RdioRemove(sublime_plugin.WindowCommand):
+
+  def run(self):
+    Rdio.execute('remove')
+    track = Rdio.execute('track')
+    status = 'Remove from Collection: {0}'.format(track)
+    sublime.status_message(status)
+
+
+class RdioUrl(sublime_plugin.WindowCommand):
+
+  def run(self):
+    rel_url = Rdio.execute('url')
+    track = Rdio.execute('track')
+    status = 'Copied {0}\'s URL to clipboard.'.format(track)
+    url = 'https://rdio.com{0}'.format(rel_url)
+    sublime.set_clipboard(url)
+    sublime.status_message(status)
