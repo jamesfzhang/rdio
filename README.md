@@ -1,4 +1,4 @@
-Rdio
+[rdio](http://jzhang.io/rdio)
 ===============
 A [Sublime Text 3](http://www.sublimetext.com/) plugin that **provides Rdio for Mac shortcuts**.
 
@@ -20,7 +20,7 @@ Demo
 Installation
 -------
 #### From Package Control
-Rdio is available through [Sublime Package Control](https://sublime.wbond.net/packages/rdio)
+rdio is available through [Sublime Package Control](https://sublime.wbond.net/packages/rdio)
 and is the recommended way to install.
 
 #### From Github
@@ -69,6 +69,6 @@ License
 
 Author
 -------
-Rdio was created and maintained by [James Zhang](http://jzhang.io).
+rdio was created and maintained by [James Zhang](http://jzhang.io).
 Give him a shoutout at [@jamesfzhang](https://twitter.com/jamesfzhang)
 if you have comments or questions.
