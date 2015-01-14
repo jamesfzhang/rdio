@@ -1,4 +1,4 @@
-[rdio](http://jzhang.io/rdio)
+[rdio]
 ===============
 A [Sublime Text 3](http://www.sublimetext.com/) plugin that **provides Rdio for Mac shortcuts**.
 
@@ -69,6 +69,5 @@ License
 
 Author
 -------
-rdio was created and maintained by [James Zhang](http://jzhang.io).
-Give him a shoutout at [@jamesfzhang](https://twitter.com/jamesfzhang)
+rdio was created and maintained by James Zhang. Give him a shoutout at [@jamesfzhang](https://twitter.com/jamesfzhang)
 if you have comments or questions.
