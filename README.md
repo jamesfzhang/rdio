@@ -1,4 +1,4 @@
-[rdio]
+rdio
 ===============
 A [Sublime Text 3](http://www.sublimetext.com/) plugin that **provides Rdio for Mac shortcuts**.
 
